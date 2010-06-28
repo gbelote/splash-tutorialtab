@@ -10,6 +10,16 @@
     <servlet-name>hello</servlet-name>
     <servlet-class>org.example.HelloAppEngineServlet</servlet-class>
   </servlet>
+  
+  <servlet>
+    <servlet-name>HomeRedirector</servlet-name>
+    <servlet-class>org.example.HomeRedirector</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>HomeRedirector</servlet-name>
+    <url-pattern>/*</url-pattern>
+  </servlet-mapping>
 
   <servlet-mapping>
     <servlet-name>hello</servlet-name>
