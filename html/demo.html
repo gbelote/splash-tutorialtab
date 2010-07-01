@@ -53,15 +53,16 @@ Any will do
 Mode: [Drop down, default = Normal] Lame, Normal, Pretty Good, Awesome
 
 -->
-<form id="wonderful_form">
-<p id="fears">
+<form id="wonderful_form" class="span-4">
+<div id="fears">
 Your Greatest Fear <br>
-<input type=radio name="fears" value="Lions"> Lions <br>
-<input type=radio name="fears" value="Bears"> Bears <br>
-<input type=radio name="fears" value="Sharks"> Sharks<br>
-<input type=radio name="fears" value="Fear itself"> Fear itself<br>
-<input type=radio name="fears" value="I FEAR NOTHING">I FEAR NOTHING<br>
-</p>
+<div id=lions><input type=radio name="fears" value="Lions"> Lions <br></div>
+<div id=bears><input type=radio name="fears" value="Bears"> Bears <br></div>
+<div id=sharks><input type=radio name="fears" value="Sharks"> Sharks<br></div>
+<div id=fear_itself><input type=radio name="fears" value="Fear itself"> Fear itself<br></div>
+<div id=i_fear_nothing><input type=radio name="fears" value="I FEAR NOTHING">I FEAR NOTHING<br></div>
+</div>
+<br>
 Mode: 
 <div>
 <select id="mode" size=4>
@@ -73,7 +74,7 @@ Mode:
 
 </div>
 <!--<input type=submit name="submit_stuff" value="Submit and Proceed">-->
-<a id=proceed href="demo2.html"> Proceed </a>
+<a id=proceed href="about2.html"> Proceed </a>
 </form>
 
 <hr>
