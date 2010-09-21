@@ -43,11 +43,11 @@
 	<p class="subheadline"> Woo!</p>
 	
 	<form name="pets_ahoy" action="demo-done.html" method="get">
-	<p>Pet's Name: <input id="petname" type="text" name="petname" /></p>
-	<p>Gender:<br />
+	<p id="petname_box">Pet's Name: <input id="petname" type="text" name="petname" /></p>
+	<p id="gender_box">Gender:<br />
 	<input id="male" type="radio" name="sex" value="male" /> Male<br />
 	<input id="female" type="radio" name="sex" value="female" /> Female <br /></p>
-	<p>Species:
+	<p id="species_box">Species:
 	<select id="species" name="species">
 	<option value="unselected" selected="">&lt;choose&gt;</option>
 	<option value="dog">Dog</option>
@@ -55,7 +55,7 @@
 	<option value="octopus">Octopus</option>
 	</select>
 	</p>
-	<p>
+	<p id="personality_box">
 		Personality traits:<br />
 	<input type="checkbox" name="personality" value="curious" />Curious
 	<input type="checkbox" name="personality" value="protective" />Protective
@@ -63,7 +63,7 @@
 	<input type="checkbox" name="personality" value="friendly" />Friendly
 	
 	</p>
-	<p><input type="submit" value="Submit" /></p>
+	<p id="submit_box"><input type="submit" value="Submit" /></p>
 	</form>	
 
 	
