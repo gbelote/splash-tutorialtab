@@ -42,14 +42,14 @@
 	
 	<p class="subheadline"> Woo!</p>
 	
-	<form name="pets_ahoy" action="sample-done.html" method="get">
-	<p>Name: <input id="petname" type="text" name="petname" /></p>
+	<form name="pets_ahoy" action="demo-done.html" method="get">
+	<p>Pet's Name: <input id="petname" type="text" name="petname" /></p>
 	<p>Gender:<br />
-	<input type="radio" name="sex" value="male" /> Male<br />
-	<input type="radio" name="sex" value="female" /> Female <br /></p>
+	<input id="male" type="radio" name="sex" value="male" /> Male<br />
+	<input id="female" type="radio" name="sex" value="female" /> Female <br /></p>
 	<p>Species:
-	<select name="species">
-	<option value="unselected"></option>
+	<select id="species" name="species">
+	<option value="unselected" selected="">&lt;choose&gt;</option>
 	<option value="dog">Dog</option>
 	<option value="cat">Cat</option>
 	<option value="octopus">Octopus</option>
