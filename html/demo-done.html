@@ -14,6 +14,25 @@
   <!--[if IE]><link rel="stylesheet" href="ccc/blueprint/ie.css" type="text/css" media="screen, projection"><![endif]-->
     <link rel="stylesheet" href="css/ttdesign.css" type="text/css" media="screen, projection" />
 
+	<!-- BEGIN TutorialTab -->
+	<script type="text/javascript">
+
+	var _tutq = _tutq || [];
+	_tutq.push(['setAccount', 30]);
+	_tutq.push(['setStartTime', new Number( new Date() )]);
+	_tutq.push(['init']);
+
+	(function() {
+	 var tuts = document.createElement('script'); tuts.type = 'text/javascript'; tuts.async = true;
+	 tuts.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://cdn') + '.tutorialtab.com/engine.js';
+	 var s = document.getElementsByTagName('script')[0];
+	 setTimeout( function() { s.parentNode.insertBefore(tuts, s); }, 10 );
+	 })();
+
+	</script>
+	<!-- END TutorialTab -->
+
+
 </head>
 
 
@@ -62,14 +81,6 @@ try {
 var pageTracker = _gat._getTracker("UA-12440093-1");
 pageTracker._trackPageview();
 } catch(err) {}</script>
-
-<script type="text/javascript">
-function TutorialTab_Config(T) {
-  T.setWebsiteId( 30 );
-  }
-  </script>
-  <script type="text/javascript" src="http://alpha-cdn.tutorialtab.com/core/tutorialtab.js"></script>
-
 
 </body>
 </html>
