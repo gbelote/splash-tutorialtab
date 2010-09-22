@@ -14,6 +14,29 @@
   <!--[if IE]><link rel="stylesheet" href="ccc/blueprint/ie.css" type="text/css" media="screen, projection"><![endif]-->
     <link rel="stylesheet" href="css/ttdesign.css" type="text/css" media="screen, projection" />
 
+	<!-- BEGIN TutorialTab -->
+	<script type="text/javascript">
+
+	var _tutq = _tutq || [];
+	_tutq.push(['setAccount', 35]);
+	_tutq.push(['setStartTime', new Number( new Date() )]);
+	_tutq.push(['init']);
+
+	(function() {
+	 var tuts = document.createElement('script'); tuts.type = 'text/javascript'; tuts.async = true;
+	 tuts.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://cdn') + '.tutorialtab.com/engine.js';
+	 var s = document.getElementsByTagName('script')[0];
+	 setTimeout( function() { s.parentNode.insertBefore(tuts, s); }, 10 );
+	 })();
+
+	</script>
+	
+	<script type="text/javascript">
+	  _tutq.push(["endTutorial"]) 
+	  _tutq.push(['launch', 96]);
+	</script>
+	<!-- END TutorialTab -->
+
 </head>
 
 
@@ -47,14 +70,6 @@
 	<p id="gender_box">Gender:<br />
 	<input id="male" type="radio" name="sex" value="male" /> Male<br />
 	<input id="female" type="radio" name="sex" value="female" /> Female <br /></p>
-	<p id="species_box">Species:
-	<select id="species" name="species">
-	<option value="unselected" selected="">&lt;choose&gt;</option>
-	<option value="dog">Dog</option>
-	<option value="cat">Cat</option>
-	<option value="octopus">Octopus</option>
-	</select>
-	</p>
 	<p id="personality_box">
 		Personality traits:<br />
 	<input type="checkbox" name="personality" value="curious" />Curious
@@ -63,7 +78,7 @@
 	<input type="checkbox" name="personality" value="friendly" />Friendly
 	
 	</p>
-	<p id="submit_box"><input type="submit" value="Submit" /></p>
+	<p id="submit_box"><input type="submit" value="Save Pet" /></p>
 	</form>	
 
 	
